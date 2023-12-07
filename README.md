@@ -10,7 +10,7 @@
     <p>Welcome to the Daily Learning Log repository! This project serves as a record of my daily learning journey in the realms of Java, JavaScript, CSS, HTML, and Web3 technologies. By maintaining this log, I aim to track my progress, reinforce concepts, and share insights with the community.</p>
     <h2>Table of Contents</h2>
     <ul>
-        <li><a href="#daily-log">Daily Log</a></li>
+        <li><a href="Daily-Log">Daily Log</a></li>
         <li><a href="#languages">Languages</a></li>
         <li><a href="#technologies">Technologies</a></li>
         <li><a href="#how-to-use">How to Use</a></li>
