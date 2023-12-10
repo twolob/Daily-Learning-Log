@@ -174,3 +174,112 @@ header > #logo{
 .items > img{
     width: 100%;
 }
+#skill-bar{
+    background-color: rgb(229, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#skill-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#skill-title > h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: rgb(0, 98, 98);
+}
+#skill-title > p{
+    font-family: "Shippori Mincho",serif;
+    font-size: 25px;
+    color: rgb(0, 128, 128);
+    margin-bottom: 3%;
+}
+#skill-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 5%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 15px;
+}
+.info > .skill{
+    color: rgb(0, 27, 27);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+.info > .progress-line{
+    background-color: rgb(233, 229, 229);
+    height: 10px;
+    width: 500px;
+    border-radius: 5px;
+    position: relative;
+}
+.progress-line > span{
+    height: 100%;
+    width: 80%;
+    border-radius: 5px;
+    background-color: rgb(0, 51, 51);
+    position: absolute;
+}
+
+.progress-line > span::after{
+    position: absolute;
+    top: -8px;
+    right: 0;
+    color: rgb(0, 231, 231);
+    background: rgb(0, 27, 27);
+    padding: 1px 8px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.progress-line.html > span::after{
+    content: "85%";
+}
+.progress-line.css > span::after{
+    content: "79%";
+}
+.progress-line.bootstrap > span::after{
+    content: "30%";
+}
+.progress-line.javascript > span::after{
+    content: "64%";
+}
+.progress-line.java > span::after{
+    content: "70%";
+}
+.progress-line.git > span::after{
+    content: "75%";
+}
+.progress-line.html > span{
+    width: 85%;
+}
+.progress-line.css > span{
+    width: 79%;
+}
+.progress-line.bootstrap > span{
+    width: 30%;
+}
+.progress-line.javascript > span{
+    width: 64%;
+}
+.progress-line.java > span{
+    width: 70%;
+}
+.progress-line.git > span{
+    width: 75%;
+}
