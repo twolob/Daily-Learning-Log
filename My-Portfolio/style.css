@@ -283,3 +283,90 @@ header > #logo{
 .progress-line.git > span{
     width: 75%;
 }
+#skill-bar > button{
+    border: 1px solid rgb(0, 123, 123);
+    border-radius: 50px;
+    padding: 15px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: rgb(0, 98, 98);
+    cursor: pointer;
+    margin-bottom: 5%;
+    transition: background-color 0.3s, color 0.3s;
+}
+#skill-bar > button:hover{
+    background-color: rgb(0, 98, 98);
+    color: white;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+}
+#project-showcase{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#project-showcase > h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 98, 98);
+}
+.bar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 2fr;
+    row-gap: 50px;
+}
+.project-img{
+    display: flex;
+    justify-content: center;
+}
+.project-img > img{
+    width: 80%;
+    min-width: 75%;
+    border-radius: 10px;
+}
+.img-1{
+    grid-area: 1/1/2/3;
+}
+.discription-1{
+    grid-area: 1/3/2/6;
+}
+.img-2{
+    grid-area: 2/3/3/5;
+}
+.discription-2{
+    grid-area: 2/1/3/3;
+}
+.project-discription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.project-discription > p{
+    text-align: center;
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    color: rgb(0, 128, 128);
+    margin-bottom: 3%;
+}
+.project-discription > button{
+    color: white;
+    margin-top: 30px;
+    margin-left: 120px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 123, 123);
+    padding: 15px 35px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
