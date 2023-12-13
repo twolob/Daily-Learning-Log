@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -133,31 +134,77 @@
     </section>
     <section id="contact-container">
         <div id="contact-title">
-            <h2>Get In Touch</h2>
+            <h2>Get In <span>Touch</span></h2>
         </div>
         <div class="contact-address">
             <div id="contact-me">
-                <h3>Contact Information</h3>
+                <h3>Contact Me</h3>
                 <!-- Contact Form -->
                 <div class="contact-form">
                     <form action="submit_form.php" method="post">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <textarea id="message" name="message" rows="4" placeholder="Message"  required></textarea>
-                        <button type="submit">Submit</button>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="text" id="number" name="number" placeholder="Your Number" required>
+                        <textarea id="message" name="message" rows="10" placeholder="Write Your Message ..." required></textarea>
+                        <button type="submit">Send Message</button>
                     </form>
                 </div>
-                <!-- Professional Social Media Profiles
-                <h3>Connect with me:</h3>
-                <ul>
-                    <li><a href="#" target="_blank">LinkedIn</a></li>
-                    <li><a href="#" target="_blank">GitHub</a></li>
-                </ul> -->
             </div>
             <div id="address">
-                <h3>Address</h3>
+                <h3>My Contact Details</h3>
+                <div class="my-contact">
+                    <div class="my-address">
+                        <address>
+                            <img src="img/maps-and-flags.png" alt="map image">
+                            <!-- <h4>Address:</h4> -->
+                            <p>
+                                Amrita Vishwa Vidyapeetham <br>
+                                Chennai Campus<br>
+                                337/1A, Vengal Village, <br>
+                                Thiruvallur Taluk & District – 601 103. <br>
+                                Tamil Nadu, India
+                            </p>
+                        </address>
+                    </div>
+                    <div class="my-email">
+                        <img src="img/mail.png" alt="email image">
+                        <!-- <h4>Email:</h4> -->
+                        <p><a href="mailto:twolobah04@gmail.com">twolobah04@gmail.com</a></p>
+                    </div>
+                    <div class="my-phone">
+                        <img src="img/call.png" alt="phone image">
+                        <!-- <h4>Phone:</h4> -->
+                        <p><a href="#">(+91)-814-869-6905</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <footer>
+        <div id="social-links">
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <!-- Add more social links as needed -->
+            </ul>
+        </div>
+        <div id="map">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7501934113136!2d80.033584714821!3d13.081056516367097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528baf1146e2ef%3A0x8a8c92261d19c1b2!2sAmrita%20Vishwa%20Vidyapeetham%20-%20Chennai%20Campus!5e0!3m2!1sen!2sin!4v1642997767986!5m2!1sen!2sin" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        <!-- Add other key components of the footer as needed -->
+        <div id="copyright">
+            <p>&copy; 2023 Mr. Wolobah. All rights reserved.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
