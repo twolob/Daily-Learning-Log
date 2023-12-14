@@ -465,6 +465,39 @@ textarea{
     margin-bottom: 2%;
 }
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer > .container-3{
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: rgb(0, 27, 27);
+    color: white;
+}
+#socials{
+    background-color: rgb(0, 226, 226);
+    padding: 30px;
+}
+.my-info, #social-links{
+    display: flex;
+    flex-direction: column;
+}
+#socials > .my-info > h2{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 5%;
+}
+#socials > .my-info > p{
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-left: 5%;
+}
+#social-links{
+
 }
