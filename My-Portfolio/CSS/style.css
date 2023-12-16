@@ -384,11 +384,8 @@ h2{
     margin-bottom: 4%;
 }
 #contact-title > h2{
-    color: white;
-    font-size: 35px;
-}
-#contact-title > h2{
     color: rgb(0, 123, 123);
+    font-size: 35px;
 }
 #contact-title > h2 > span{
     color: rgb(0, 27, 27);
