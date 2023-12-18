@@ -1,0 +1,15 @@
+#contact-section{
+    background-color: rgb(209, 243, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me{
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+.my-contact{
+    display: flex;
+    justify-content: center;
+}
