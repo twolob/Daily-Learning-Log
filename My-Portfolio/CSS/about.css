@@ -1,5 +1,6 @@
 #about-section{
-    background-color: rgb(209, 243, 255);
+    /* background-color: rgb(209, 243, 255); */
+    background-color: rgb(80, 161, 161);
     display: flex;
     justify-self: center;
     align-items: center;
@@ -18,7 +19,7 @@
     border-radius: 50%;
     margin-right: 3%;
     width: 500px;
-    background-image: linear-gradient(to top, white, rgb(0, 226, 226), rgb(0, 128, 128), rgb(0, 98, 98));
+    background-image: linear-gradient(to top, rgb(80, 161, 161), rgb(201, 238, 240), rgb(0, 226, 226), rgb(0, 128, 128), rgb(0, 98, 98));
 
 }
 .my-bio{
@@ -54,7 +55,7 @@
     font-size: 20px;
 }
 .info > p{
-    color: rgb(0, 59, 59);
+    color: white;
 }
 #contact-resume{
     margin-top: 10%;

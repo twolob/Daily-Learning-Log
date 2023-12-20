@@ -458,7 +458,7 @@ textarea{
     display: flex;
     flex-direction: column;
 }
-.my-address > address > img, .my-email > img, .my-phone > img{
+.my-address > img, .my-email > img, .my-phone > img{
     width: 25px;
     margin-bottom: 2%;
 }
