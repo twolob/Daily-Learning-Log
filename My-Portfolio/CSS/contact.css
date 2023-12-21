@@ -1,5 +1,5 @@
 #contact-section{
-    background-color: rgb(8, 151, 151);
+    background-color: rgb(87, 228, 228);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +20,9 @@
     padding-top: 75px;
     position: relative;
 }
+.my-contact > .my-email > p > a, .my-contact > .my-phone > p > a, .my-address > address > p{
+    color: rgb(0, 27, 27);
+}
 .img-circle{
     background-color: rgb(8, 151, 151);
     width: 60px;
@@ -39,7 +42,7 @@
 #contact-me{
     background-color: whitesmoke;
     margin-bottom: 3%;
-    box-shadow: 5px 8px 13px rgba(0,0,0,0.2);
+    box-shadow: 5px 8px 13px rgba(3, 120, 120, 0.4);
 }
 .my-address > address, .my-email, .my-phone{
     text-align: center;
@@ -49,5 +52,5 @@
     margin-top: 2%;
 }
 .in-touch > h2 > span{
-    color: rgb(0, 27, 27);
+    color: white;
 }
