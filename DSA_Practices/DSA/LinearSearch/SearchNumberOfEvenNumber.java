@@ -8,10 +8,16 @@ public class SearchNumberOfEvenNumber {
 
     static int findNumbers(int[] nums){
         int sum = 0;
-        for (int i = 0; i < nums.length; i++){
-            if(nums[i] % 2 == 0){
+        int count = 0;
+        for (int num : nums){
+            while(num > 0){
+                count++;
+                num = num / 10;
+            }
+            if(count % 2 == 0){
                 sum += 1;
             }
+            count = 0;
         }
         return sum;
     }
