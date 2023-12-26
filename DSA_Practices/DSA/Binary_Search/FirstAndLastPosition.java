@@ -10,10 +10,8 @@ public class FirstAndLastPosition {
     }
     static int[] returnPosition(int[] nums, int target){
         int[] ans = {-1, -1};
-        int start = search(nums, target, true);
-        int end = search(nums, target, false);
-        ans[0] = start;
-        ans[1] = end;
+        ans[0] = search(nums, target, true);
+        ans[1] = search(nums, target, false);
         return ans;
     }
     static int search(int[] nums, int target, boolean findStart){
