@@ -1,6 +1,5 @@
 //https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 package DSA.Binary_Search;
-
 public class FindingValueInInfiniteArray {
     public static void main(String[] args){
         int[] nums = {3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170};
@@ -35,5 +34,4 @@ public class FindingValueInInfiniteArray {
         }
         return -1;
     }
-
 }
