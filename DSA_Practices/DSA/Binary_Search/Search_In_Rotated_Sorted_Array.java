@@ -19,7 +19,6 @@ public class Search_In_Rotated_Sorted_Array {
     static int checkRotatingArray(int[] nums){
         int start = 0;
         int end = nums.length - 1;
-
         while(start <= end){
             int mid = start + (end - start) / 2;
             if(start == end){
@@ -37,7 +36,6 @@ public class Search_In_Rotated_Sorted_Array {
     static int searchHalf(int[] nums, int target, int start, int end){
         while(start <= end){
             int mid = start + (end - start) / 2;
-
             if(target > nums[mid]){
                 start = mid + 1;
             }
