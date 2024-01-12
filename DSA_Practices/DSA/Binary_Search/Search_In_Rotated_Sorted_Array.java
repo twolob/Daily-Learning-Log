@@ -21,13 +21,16 @@ public class Search_In_Rotated_Sorted_Array {
         int end = nums.length - 1;
         while(start <= end){
             int mid = start + (end - start) / 2;
-            if(start == end){
+            if(mid < end && nums[mid] > nums[mid + 1]){
                 return mid;
             }
-            if (nums[mid] > nums[mid + 1]){
-                end = mid;
+            if (mid > end && nums[mid] < nums[mid - 1]){
+                return mid - 1;
             }
-            else if(nums[mid] < nums[mid + 1]){
+            else if(nums[mid] <= nums[start]){
+                end = mid - 1;
+            }
+            else{
                 start = mid + 1;
             }
         }
