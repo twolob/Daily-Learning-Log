@@ -11,11 +11,16 @@ public class Two_Sum {
 
         while(start <= end){
             int mid = start + (end - start) / 2;
-
-            if(start == mid || end == mid){
+            if(start == end){
                 return new int[] {-1, -1};
             }
-            
+            if((numbers[start] + numbers[mid]) == target){
+                return new int[] {start, mid};
+            } else if((numbers[start] + numbers[mid]) > target) {
+                
+            }
+
         }
+        return new int[] {-1, -1};
     }
 }
