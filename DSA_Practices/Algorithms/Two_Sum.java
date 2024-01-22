@@ -1,11 +1,12 @@
 package Algorithms;
-
+import java.util.Arrays;
 public class Two_Sum {
     public static void main(String[] arg){
         int[] numbers = {-1,0};
         int target = -1;
+        System.out.println(Arrays.toString((twoSum(numbers, target)));
     }
-    public int[] twoSum(int[] numbers, int target) {
+    public static int[] twoSum(int[] numbers, int target) {
         int start = 0;
         int end = numbers.length - 1;
 
@@ -17,7 +18,9 @@ public class Two_Sum {
             if((numbers[start] + numbers[mid]) == target){
                 return new int[] {start, mid};
             } else if((numbers[start] + numbers[mid]) > target) {
-                
+                end = mid;
+            }else{
+                start = mid;
             }
 
         }
