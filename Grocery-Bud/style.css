@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(207, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}
+.entry-section{
+    text-align: center;
+    margin-bottom: 45px;
+    margin-top: 60px;
+}
+.entry-section > h1{
+    color: rgba(8,44,93,255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.entry-section > .search-box{
+    width: 350px;
+    height: 24px;
+    font-size: 15px;
+    background-color: rgb(227, 240, 245);
+}
+.entry-section > .submit{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(171, 219, 238);
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.entry-section > .submit:hover{
+    background-color: skyblue;
+}
+.display-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.display-list > .list-delete{
+    display: grid;
+    grid-template-columns: 365px 50px;
+}
+.list-delete > div{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list-delete > .delete-button{
+    cursor: pointer;
+    width: 0px;
+    margin-bottom: 15px;
+    color: red;
+}
