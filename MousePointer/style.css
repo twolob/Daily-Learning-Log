@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(6, 6, 6);
+    overflow: hidden;
+}
+.mouse-pointer{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, blue);
+    filter: blur(200px);
+    animation: rotate 20s infinite;
+}
+@keyframes rotate {
+    from{
+        rotate:(1deg);
+    }
+    50%{
+        scale: 1 1.5;
+    }
+    to{
+        rotate:(360deg);
+    }
+}
