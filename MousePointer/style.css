@@ -17,12 +17,12 @@ body{
 }
 @keyframes rotate {
     from{
-        rotate:(1deg);
+        rotate: 0deg;
     }
     50%{
         scale: 1 1.5;
     }
     to{
-        rotate:(360deg);
+        rotate: 360deg;
     }
 }
