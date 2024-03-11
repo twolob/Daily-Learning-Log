@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 .container{
     background-color: white;
@@ -93,5 +94,26 @@
     & > img{
         width: 30px;
         margin: 5px;
+    }
+}
+#pointer{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to right, var(--orange), var(--nav-black));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    z-index: 2;
+    filter: blur(1px);
+    animation: rotate 10s infinite;
+}
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 369deg;
     }
 }
