@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VoxPost</title>
+</head>
+<body>
+    <header>
+        <%- include('nav')%>
+        <section class="hero-section">
+            <div class="container1">
+                <p>New Insights, Latest Trends, and <span class="typing-words"></span></p>
+            </div>
+            <div class="container2">
+                <div class="news-letter">
+                    <div class="news-letter-text">
+                        <p>Stay up-to-date with the latest articles, 
+                            trends, and exclusive offers by subscribing 
+                            to our newsletter. Enter your email below to 
+                            join our community of readers!
+                        </p>
+                    </div>
+                    <div class="news-letter-email">
+                        <form action="#" method="post">
+                            <input type="text" name="email" id="email" placeholder="You email" required>
+                            <input type="submit" value="SUBSCRIBE" id="submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="../images/hero1.jpg" alt="news photo">
+                    </div>
+                    <div class="article">
+                        <p class="article-title">Unraveling the Mysteries of Quantum Computing</p>
+                        <p class="article-discription">Dive into the fascinating 
+                            world of quantum computing, where qubits, superposition, 
+                            and entanglement redefine the limits of traditional computing.
+                        </p>
+                        <div class="article-info">
+                            <div class="article-category">Technology</div>
+                            <div class="article-date">April 18</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="container3">
+        <div class="reading-list">
+            <div class="list-title">
+                <p>Reading List</p>
+            </div>
+            <div class="reader-items">
+                <h1><a href="#">Classics /</a></h1>
+                <h1><a href="#">Sci-Fi /</a></h1>
+                <h1><a href="#">Travel /</a></h1>
+                <h1><a href="#">Self-Help /</a></h1>
+                <h1><a href="#">Fantasy /</a></h1>
+                <h1><a href="#">Memoirs /</a></h1>
+                <h1><a href="#">Thrillers /</a></h1>
+                <h1><a href="#">Mystery</a></h1>
+            </div>
+        </div>
+    </section> 
+    <section class="container4">
+        <div class="articles">
+            <div class="trending">
+                <h2>TRENDING ARTICLES</h2>
+                <div></div>
+                <button>SEE ALL &rarr;</button>
+            </div>
+            <%articles.forEach(article=>{ %>
+                <div class="trending-article">
+                    <div class="article-image">
+                        <img src=<%= article.articleImage %> alt="">
+                    </div>
+                    <div class="article-details">
+                        <div class="article-category"><%= article.articleCategory %></div>
+                        <p class="article-title"><%= article.articleTitle %></p>
+                        <div class="Published-info">
+                            <p>Written by: <span><%= article.authorName %></span></p>
+                            <p>.</p>
+                            <p>Published on: <span><%= article.publishedDate.toLocaleString() %></span></p>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+    <section class="container5">
+        <div class="monthly-mail">
+            <div class="email-info">
+                <p>THE BEST IN YOUR INBOX, EACH MONTH</p>
+            </div>
+            <div class="news-letter">
+                <div class="news-letter-text">
+                    <p>Stay up-to-date with the latest articles, 
+                        trends, and exclusive offers by subscribing 
+                        to our newsletter. Enter your email below to 
+                        join our community of readers!
+                    </p>
+                </div>
+                <div class="news-letter-email">
+                    <form action="#" method="post">
+                        <input type="text" name="email" id="email" placeholder="You email" required>
+                        <input type="submit" value="SUBSCRIBE" id="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%- include('footer') %>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

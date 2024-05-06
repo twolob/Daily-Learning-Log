@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VoxPost</title>
+</head>
+<body>
+    <header>
+        <%- include('nav')%>
+    </header>
+    <section class="container4">
+        <div class="articles">
+            <div class="trending">
+                <h2>TRENDING ARTICLES</h2>
+                <div></div>
+                <button>SEE ALL &rarr;</button>
+            </div>
+            <%articles.forEach(article=>{ %>
+                <div class="trending-article">
+                    <div class="article-image">
+                        <img src=<%= article.articleImage %> alt="">
+                    </div>
+                    <div class="article-details">
+                        <div class="article-category"><%= article.articleCategory %></div>
+                        <p class="article-title"><%= article.articleTitle %></p>
+                        <div class="Published-info">
+                            <p>Written by: <span><%= article.authorName %></span></p>
+                            <p>.</p>
+                            <p>Published on: <span><%= article.publishedDate.toLocaleString() %></span></p>
+                        </div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+    <%- include('footer') %>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
